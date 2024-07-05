@@ -12,16 +12,25 @@ linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
+  use_frameworks! :linkage => :static 
 end
 
 target 'AuthApp' do
   config = use_native_modules!
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'Firebase/Messaging', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  $RNFirebaseAsStaticFramework = true
 
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+  # use_flipper!({'Flipper' => '0.58.0'}) # should match the version of your Flipper client app
+  # post_install do |installer|
+  #   flipper_post_install(installer)
+  # end
 
   target 'AuthAppTests' do
     inherit! :complete
