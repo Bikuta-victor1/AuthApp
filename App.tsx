@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import Welcome from './navigation/Welcome';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import type {PropsWithChildren} from 'react';
@@ -30,9 +29,10 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import SignUp from './navigation/SignUp';
-import Login from './navigation/Login';
 import Profile from './src/pages/Profile';
+import Welcome from './src/pages/Welcome';
+import Login from './src/pages/Login';
+import SignUp from './src/pages/SignUp';
 
 const MainStack = createNativeStackNavigator();
 

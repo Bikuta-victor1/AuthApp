@@ -20,6 +20,7 @@ target 'AuthApp' do
   pod 'FirebaseCoreInternal', :modular_headers => true
   pod 'Firebase/Messaging', :modular_headers => true
   pod 'GoogleUtilities', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
   $RNFirebaseAsStaticFramework = true
 
   use_react_native!(
