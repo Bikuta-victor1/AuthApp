@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911552448612",
+    "project_id": "authapp-8405e",
+    "storage_bucket": "authapp-8405e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911552448612:android:e77fc47365c01a1590f771",
+        "android_client_info": {
+          "package_name": "com.firebaseApp.authApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARdWIfVTc_-Uo2CgHh46x7vdnhosYIg8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
