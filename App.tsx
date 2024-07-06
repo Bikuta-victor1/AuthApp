@@ -9,7 +9,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import type {PropsWithChildren} from 'react';
-import { AntDesign, Entypo } from 'react-native-vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import  AppStateProvider from './src/providers/AppState';
 
 import {

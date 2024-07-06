@@ -30,7 +30,7 @@ const Profile=({route,navigation}) => {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../../assets/image_11.jpg")}
+        source={require("../assets/image_11.jpg")}
         style={styles.profileImage}
       />
       <Text style={styles.name}>{ "${activeUser.firstName} ${activeUser.lastName}" }</Text>

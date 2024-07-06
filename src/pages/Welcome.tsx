@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
-import {AntDesign, Entypo} from 'react-native-vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import Entypo from 'react-native-vector-icons/Entypo';
 
 const Welcome = ({route, navigation}) => {
   const navigateToLogin = () => {
@@ -11,7 +11,7 @@ const Welcome = ({route, navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Image source={require('../../assets/welcome2.png')} />
+        <Image source={require('../assets/welcome2.png')} />
       </View>
       <TouchableOpacity onPress={navigateToLogin} style={styles.arrowContainer}>
         <AntDesign style={styles.arrowRight} name="arrowright" />
