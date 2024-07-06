@@ -7,6 +7,7 @@ import { fetchUser } from "../services/api_service";
 
 
 const Profile=({route,navigation}) => {
+  const { activeUser, setActiveUser } = useAppData();
 
 //     async function loadUserProfile(userID: string) {
 //         console.log('Loading user profile');
@@ -33,7 +34,7 @@ const Profile=({route,navigation}) => {
         source={require("../assets/image_11.jpg")}
         style={styles.profileImage}
       />
-      <Text style={styles.name}>{ "${activeUser.firstName} ${activeUser.lastName}" }</Text>
+      <Text style={styles.name}>{`${activeUser.firstName} ${activeUser.lastName}`}</Text>
       <View style={styles.aboutContainer}>
         <Text style={styles.contactLabel}>About </Text>
         <Text style={styles.about}>

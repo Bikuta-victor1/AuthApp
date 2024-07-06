@@ -40,8 +40,6 @@ const Login = ({route, navigation}) => {
       return;
     }
 
-
-
     setStatus('Authenticating ..');
     signInAsync(email, password)
       .then(userCred => {
@@ -73,7 +71,7 @@ const Login = ({route, navigation}) => {
     setActiveUser(loadedUser);
     navigation.reset({
       index: 0,
-      routes: [{name: 'AfterLogin'}],
+      routes: [{name: 'Profile'}],
     });
   }
 
